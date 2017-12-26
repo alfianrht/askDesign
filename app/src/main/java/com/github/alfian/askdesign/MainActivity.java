@@ -11,9 +11,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        RecyclerView list = (RecyclerView) findViewById(R.id.item_cardView);
-        list.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        list.setAdapter(new HorizontalAdapter(new String[]{"Android", "C#", "Java"}));
     }
 }
