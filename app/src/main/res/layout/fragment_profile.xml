@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/person"
+        android:background="@drawable/shape"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/cover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:src="@mipmap/person" />
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cover"
+        android:background="@color/gray">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:text="Aufa Billah"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="aufaroot18@gmail.com"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile">
+
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="085280463737"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="Jalan Situ Indah"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alamat"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="Laki-Laki"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
