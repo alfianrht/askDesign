@@ -10,6 +10,7 @@ import com.github.alfian.askdesign.adapter.BottomBarAdapter;
 import com.github.alfian.askdesign.fragment.FragmentHistory;
 import com.github.alfian.askdesign.fragment.FragmentHome;
 import com.github.alfian.askdesign.fragment.FragmentProfile;
+import com.github.alfian.askdesign.util.CustomViewPager;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -19,7 +20,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.viewpager_main)
-    ViewPager viewpager_main;
+    CustomViewPager viewpager_main;
 
     @BindView(R.id.bottombar_main)
     BottomBar bottombar_main;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setupViewPager(viewpager_main);
         viewpager_main.setOffscreenPageLimit(3);
+        viewpager_main.setPagingEnabled(false);
         bottombar_main.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(int tabId) {

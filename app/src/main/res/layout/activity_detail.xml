@@ -63,24 +63,27 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textStyle="bold"/>
 
-                    <RadioButton
-                        android:id="@+id/checkbox_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1 Color"
-                        android:onClick="onCheckboxClicked"/>
-                    <RadioButton
-                        android:id="@+id/checkbox_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2 Color"
-                        android:onClick="onCheckboxClicked"/>
-                    <RadioButton
-                        android:id="@+id/checkbox_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3 Color"
-                        android:onClick="onCheckboxClicked"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/checkbox_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Color"/>
+                        <RadioButton
+                            android:id="@+id/checkbox_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2 Color"/>
+                        <RadioButton
+                            android:id="@+id/checkbox_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Color"/>
+
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -96,8 +99,7 @@
                         android:text="LOGO RESPONSIVE"
                         android:layout_marginTop="10dp"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:onClick="onCheckboxClicked"/>
+                        android:textStyle="bold"/>
 
                 </LinearLayout>
 
@@ -115,18 +117,22 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textStyle="bold"/>
 
-                    <RadioButton
-                        android:id="@+id/duration_fs"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fast"
-                        android:onClick="onCheckboxClicked"/>
-                    <RadioButton
-                        android:id="@+id/duration_nm"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Normal"
-                        android:onClick="onCheckboxClicked"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/duration_fs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fast" />
+                        <RadioButton
+                            android:id="@+id/duration_nm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Normal" />
+
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -140,8 +146,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Saya menerima segala keputusan yang ada"
-                        android:layout_marginTop="10dp"
-                        android:onClick="onCheckboxClicked"/>
+                        android:layout_marginTop="10dp"/>
 
                 </LinearLayout>
 
