@@ -7,6 +7,9 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * Created by aufa18 on 27/12/17.
  */
@@ -15,7 +18,8 @@ public class Login extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_login);
+        ButterKnife.bind(this);
 
         Button tmbl = (Button) findViewById(R.id.btn_login);
         tmbl.setOnClickListener(new View.OnClickListener() {
@@ -25,5 +29,12 @@ public class Login extends Activity {
                 startActivity(in);
             }
         });
+    }
+
+    @OnClick(R.id.btn_register)
+    public void onBtnReisterClicked() {
+        Intent in = new Intent(this, Register.class);
+        startActivity(in);
+        finish();
     }
 }

@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.github.alfian.askdesign.MainActivity">
 
-    <include layout="@layout/toolbar_default"
-        android:id="@+id/include" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_default" />
 
     <com.github.alfian.askdesign.util.CustomViewPager
         android:id="@+id/viewpager_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/include"
-        android:layout_above="@+id/bottombar_main"/>
+        android:layout_above="@+id/bottombar_main"
+        android:layout_below="@+id/include" />
 
     <com.roughike.bottombar.BottomBar
         android:id="@+id/bottombar_main"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#FFFFFF"
-        app:bb_activeTabColor="@color/colorPrimary"
-        app:bb_inActiveTabColor="#434343"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        app:bb_tabXmlResource="@xml/bottombar_menu"
-        app:bb_behavior="shifting"/>
+        app:bb_tabXmlResource="@xml/bottombar_menu" />
 
 </RelativeLayout>

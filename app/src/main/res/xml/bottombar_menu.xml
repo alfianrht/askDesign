@@ -1,14 +1,13 @@
 <tabs>
     <tab
         id="@+id/tab_home"
-        icon="@mipmap/gallery"
+        icon="@drawable/gallery"
         title="Home" />
     <tab
         id="@+id/tab_history"
-        icon="@mipmap/history"
+        icon="@drawable/history"
         title="History" />
     <tab
         id="@+id/tab_profile"
-        icon="@mipmap/person"
-        title="Profile" />
+        icon="@drawable/person" />
 </tabs>

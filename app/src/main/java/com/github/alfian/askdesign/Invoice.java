@@ -4,29 +4,24 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.View;
-import android.widget.Button;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * Created by aufa18 on 27/12/17.
+ * Created by aufa18 on 28/12/17.
  */
 
-public class Register extends Activity {
-
+public class Invoice extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register);
+        setContentView(R.layout.activity_invoice);
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.btn_register)
-    public void onBtnReisterClicked() {
-        Intent in = new Intent(Register.this, Login.class);
-        startActivity(in);
-        finish();
+    @OnClick(R.id.btn_done)
+    public void doneClicked() {
+        startActivity(new Intent(this, MainActivity.class));
     }
 }
